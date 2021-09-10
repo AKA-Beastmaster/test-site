@@ -16,7 +16,9 @@ ul{
 html{
     background-color: #FFEFD3;
 }
-
-#done{
-    list-style-image: url();
+#box{
+    list-style-image: url(https://github.com/AKA-Beastmaster/test-site/blob/main/images/42186_checkbox_checked_unchecked_icon.png?raw=true);
+}
+#box-done{
+    list-style-image: url(https://github.com/AKA-Beastmaster/test-site/blob/main/images/42185_box_icon.png?raw=true);
 }
