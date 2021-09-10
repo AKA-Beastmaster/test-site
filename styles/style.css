@@ -1,0 +1,22 @@
+h1{
+    font-size: 50px;
+    font-family: 'Heebo', sans-serif;
+    color: #2F4D52;
+}
+h2{
+    font-size: 20px;
+    font-family: 'Lustria', serif;
+    color: #042A2B;
+}
+ul{
+    font-size: 15px;
+    font-family: 'Lustria', serif;
+    color: #042A2B;
+}
+html{
+    background-color: #FFEFD3;
+}
+
+#done{
+    list-style-image: url();
+}
