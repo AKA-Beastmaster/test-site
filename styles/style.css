@@ -46,6 +46,27 @@ html{
     
 }
 
+.list-of-things:before {
+    content:"";
+    display: block;
+    margin-left: -2em;
+    margin-right: -1em;
+    width: auto;
+    padding-bottom: 0.5em;
+    border-top: 3px solid #597078;
+}
+
+.list-of-things:after {
+    content:"";
+    display: block;
+    margin-left: -2em;
+    margin-right: -1em;
+    width: 80%;
+    padding-top: 1em;
+    border-bottom: 2px solid #597078;
+}
+
+
 .alltext{
     text-align: center;
 }
