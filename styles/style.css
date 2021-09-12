@@ -46,7 +46,16 @@ html{
     
 }
 
-.list-of-things:before {
+.bottom{
+    border-bottom: 3px solid #597078;
+    margin-left: -2em;
+    width: 15em;
+    margin-top: -4.5em;
+    border-left: 3px solid;
+    height: 5em;
+}
+
+/* .list-of-things:before {
     content:"";
     display: block;
     margin-left: -2em;
@@ -64,7 +73,7 @@ html{
     width: 80%;
     padding-top: 1em;
     border-bottom: 2px solid #597078;
-}
+} */
 
 
 .alltext{
