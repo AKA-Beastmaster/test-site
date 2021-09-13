@@ -1,5 +1,6 @@
 /* color palette https://coolors.co/042a2b-2f4d52-597078-adb6c4-ffefd3-ffc49b-3f0d12 */
 
+/* fixes topbar issues */
 * {
     margin: 0px;
     padding: 0px;
@@ -9,7 +10,7 @@
     background-color: #FFC49B;
     
 }
-
+/* fonts and stuff */
 h1{
     font-size: 50px;
     font-family: 'Heebo', sans-serif;
@@ -27,11 +28,11 @@ ul{
     font-family: 'Lustria', serif;
     color: #042A2B;
 }
-
+/* the color of the page */
 html{
     background-color: #FFEFD3;
 }
-
+/* the list bullet styles */
 #box{
     list-style-image: url(https://github.com/AKA-Beastmaster/test-site/blob/main/images/box.svg?raw=true);
 }
@@ -41,6 +42,7 @@ html{
 
 }
 
+/* getting the borders working */
 .list-of-things{
     
     margin-top: 50px;
@@ -56,7 +58,7 @@ html{
     
 }
 
-
+/* top border */
  .list-of-things:before {
     content:"";
     display: block;
@@ -66,6 +68,7 @@ html{
     padding-bottom: 0.5em;
     border-top: 3px solid #597078;
 }
+/* bottom border */
 
 .list-of-things:after {
     content:"";
@@ -77,7 +80,7 @@ html{
     border-bottom: 2px solid #597078;
 }
 
-
+/* aligning the text to the middleo of the page */
 .alltext{
     text-align: center;
 }
