@@ -1,5 +1,15 @@
 /* color palette https://coolors.co/042a2b-2f4d52-597078-adb6c4-ffefd3-ffc49b-3f0d12 */
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.topbar{
+    background-color: #FFC49B;
+    
+}
+
 h1{
     font-size: 50px;
     font-family: 'Heebo', sans-serif;
@@ -46,16 +56,8 @@ html{
     
 }
 
-.bottom{
-    border-bottom: 3px solid #597078;
-    margin-left: -2em;
-    width: 15em;
-    margin-top: -4.5em;
-    border-left: 3px solid;
-    height: 5em;
-}
 
-/* .list-of-things:before {
+ .list-of-things:before {
     content:"";
     display: block;
     margin-left: -2em;
@@ -73,7 +75,7 @@ html{
     width: 80%;
     padding-top: 1em;
     border-bottom: 2px solid #597078;
-} */
+}
 
 
 .alltext{
