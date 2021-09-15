@@ -24,7 +24,11 @@ ul{
     font-family: 'Lustria', serif;
     color: #042A2B;
 }
-
+#mainheader::before{
+    content: "";
+    display: block;
+    height: 50px;
+}
 /* the color of the page */
 html{
     background-color: #FFEFD3;
@@ -83,11 +87,11 @@ html{
 }
 
 #logo{
-    padding-left: 7pt;
+    /* padding-left: 7pt;
     padding-top: 5pt;
     padding-bottom: 5pt;
-    padding-right: 7pt;
-    background-color: #3F0D12;
+    padding-right: 7pt; */
+    
     
 }
 
@@ -96,7 +100,6 @@ html{
     text-align: center;
     position: fixed;
     width: 100%;
-    
 }
 nav {
     position: absolute;
