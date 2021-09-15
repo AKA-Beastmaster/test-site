@@ -6,10 +6,6 @@
     padding: 0px;
 }
 
-.topbar{
-    background-color: #FFC49B;
-    
-}
 /* fonts and stuff */
 h1{
     font-size: 50px;
@@ -28,6 +24,7 @@ ul{
     font-family: 'Lustria', serif;
     color: #042A2B;
 }
+
 /* the color of the page */
 html{
     background-color: #FFEFD3;
@@ -59,7 +56,7 @@ html{
 }
 
 /* top border */
- .list-of-things:before {
+.list-of-things:before {
     content:"";
     display: block;
     margin-left: -2em;
@@ -83,4 +80,43 @@ html{
 /* aligning the text to the middleo of the page */
 .alltext{
     text-align: center;
+}
+
+#logo{
+    padding-left: 7pt;
+    padding-top: 5pt;
+    padding-bottom: 5pt;
+    padding-right: 7pt;
+    background-color: #3F0D12;
+    
+}
+
+.topbar{
+    background-color: #FFC49B;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    
+}
+nav {
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0pt;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav li{
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+a {
+    color: #597078;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.1em;
 }
