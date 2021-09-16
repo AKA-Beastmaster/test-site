@@ -1,4 +1,16 @@
-/* color palette https://coolors.co/042a2b-2f4d52-597078-adb6c4-ffefd3-ffc49b-3f0d12 */
+/* color palette https://coolors.co/042a2b-2f4d52-597078-be7c4d-ffefd3-ffc49b-3f0d12 */
+
+/* Set the color variables */
+:root{
+    --pagebackgroundcolor: #FFEFD3;
+    --topbarcolor: #FFC49B;
+    --topbarcolorcontrast: #3F0D12;
+    --fontdark: #042A2B;
+    --fontsemidark: #2F4D52;
+    --fontlight: #597078;
+
+
+}
 
 /* fixes topbar issues */
 * {
@@ -10,19 +22,19 @@
 h1{
     font-size: 50px;
     font-family: 'Heebo', sans-serif;
-    color: #2F4D52;
+    color: var(--fontsemidark);
 }
 
 h2{
     font-size: 20px;
     font-family: 'Lustria', serif;
-    color: #042A2B;
+    color: var(--fontdark);
 }
 
 ul{
     font-size: 15px;
     font-family: 'Lustria', serif;
-    color: #042A2B;
+    color: var(--fontdark);
 }
 #mainheader::before{
     content: "";
@@ -31,7 +43,7 @@ ul{
 }
 /* the color of the page */
 html{
-    background-color: #FFEFD3;
+    background-color: var(--pagebackgroundcolor);
 }
 /* the list bullet styles */
 #box{
@@ -67,7 +79,7 @@ html{
     margin-right: -1em;
     width: auto;
     padding-bottom: 0.5em;
-    border-top: 3px solid #597078;
+    border-top: 3px solid var(--fontlight);
 }
 /* bottom border */
 
@@ -78,7 +90,7 @@ html{
     margin-right: -1em;
     width: 80%;
     padding-top: 1em;
-    border-bottom: 2px solid #597078;
+    border-bottom: 2px solid var(--fontlight);
 }
 
 /* aligning the text to the middleo of the page */
@@ -90,13 +102,11 @@ html{
     /* padding-left: 7pt;
     padding-top: 5pt;
     padding-bottom: 5pt;
-    padding-right: 7pt; */
-    
-    
+    padding-right: 7pt; */ 
 }
 
 .topbar{
-    background-color: #FFC49B;
+    background-color: var(--topbarcolor);
     text-align: center;
     position: fixed;
     width: 100%;
@@ -106,6 +116,8 @@ nav {
     text-align: left;
     top: 100%;
     left: 0pt;
+    background: var(--topbarcolor);
+    width: 100%;
 }
 
 nav ul{
@@ -117,9 +129,12 @@ nav li{
     margin-left: 1em;
 }
 
-a {
-    color: #597078;
+nav a {
+    color: var(--fontlight);
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.1em;
+}
+nav a:hover{
+    color: var(--topbarcolorcontrast);
 }
