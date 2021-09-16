@@ -8,8 +8,6 @@
     --fontdark: #042A2B;
     --fontsemidark: #2F4D52;
     --fontlight: #597078;
-
-
 }
 
 /* fixes topbar issues */
@@ -39,7 +37,7 @@ ul{
 #mainheader::before{
     content: "";
     display: block;
-    height: 50px;
+    height: 1.25em;
 }
 /* the color of the page */
 html{
@@ -97,6 +95,9 @@ html{
 .alltext{
     text-align: center;
 }
+#scrollextend{
+    margin-top: 50em;
+}
 
 #logo{
     /* padding-left: 7pt;
@@ -118,6 +119,9 @@ nav {
     left: 0pt;
     background: var(--topbarcolor);
     width: 100%;
+    transform:scale(1,0);
+    transform-origin: top;
+    transition:transform 250ms ease-in;
 }
 
 nav ul{
@@ -134,7 +138,119 @@ nav a {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.1em;
+    opacity: 0;
+    transition:opacity 75ms ease-in ;
 }
 nav a:hover{
     color: var(--topbarcolorcontrast);
+}
+.nav-hide{
+    display: none;
+}
+.nav-hide-label{
+    position: absolute;
+    top: 0;
+    left: 0%;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.nav-hide:checked ~ nav{
+    transform: scale(1,1);
+}
+.nav-hide:checked ~ nav a{
+    opacity: 1;
+    transition:opacity 75ms ease-in 175ms;
+}
+.nav-hide:checked ~ .nav-hide-label span{
+    background-color: var(--topbarcolorcontrast);
+}
+.nav-hide:checked ~ .nav-hide-label span::before{
+    background-color: var(--topbarcolorcontrast);
+}
+.nav-hide:checked ~ .nav-hide-label span::after{
+    background-color: var(--topbarcolorcontrast);
+}
+.nav-hide:hover ~ .nav-hide-label span{
+    background-color: var(--fontlight);
+}
+.nav-hide:hover ~ .nav-hide-label span::before{
+    background-color: var(--fontlight);
+}
+.nav-hide:hover ~ .nav-hide-label span::after{
+    background-color: var(--fontlight);
+}
+.nav-hide-label span,
+.nav-hide-label span::before,
+.nav-hide-label span::after{
+    display: block;
+    background-color: var(--pagebackgroundcolor);
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+}
+
+.nav-hide-label span::before,
+.nav-hide-label span::after{
+    content: "";
+    position: absolute;
+}
+.nav-hide-label span::before{
+    bottom: 7px;
+}
+.nav-hide-label span::after{
+    top: 7px;
+}
+
+
+@media screen and (min-width: 800px){
+    .nav-hide-label{
+        display: none;
+    }
+
+    .topbar{
+        display: grid;
+        grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+    }
+
+    #logo{
+        grid-column: 2/span 1;
+    }
+    
+    nav{
+        all: unset;
+        grid-column: 3/4;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav li{
+        margin-left: 3em;
+        margin-bottom: 0;
+    }
+    
+    nav ul{
+        display: flex;
+        justify-content: flex-end;
+    }
+    nav a{
+        opacity: 1;
+        position: relative;
+    }
+
+    nav a::before{
+        content: "";
+        display: block;
+        height: 3px;
+        background-color: var(--topbarcolorcontrast);
+        position: absolute;
+        top: -1em;
+        left: 0;
+        right 0
+
+        
+    }
 }
