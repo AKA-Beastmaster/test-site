@@ -161,7 +161,7 @@ nav a:hover{
 }
 .nav-hide:checked ~ nav a{
     opacity: 1;
-    transition:opacity 75ms ease-in 175ms;
+    transition:opacity 50ms ease-in 200ms;
 }
 .nav-hide:checked ~ .nav-hide-label span{
     background-color: var(--topbarcolorcontrast);
@@ -173,19 +173,22 @@ nav a:hover{
     background-color: var(--topbarcolorcontrast);
 }
 .nav-hide:hover ~ .nav-hide-label span{
-    background-color: var(--fontlight);
+    background-color: var(--topbarcolorcontrast);
 }
 .nav-hide:hover ~ .nav-hide-label span::before{
-    background-color: var(--fontlight);
+    background-color: var(--topbarcolorcontrast);
 }
 .nav-hide:hover ~ .nav-hide-label span::after{
-    background-color: var(--fontlight);
+    background-color: var(--topbarcolorcontrast);
+}
+.nav-hide-label {
+    cursor: pointer;
 }
 .nav-hide-label span,
 .nav-hide-label span::before,
 .nav-hide-label span::after{
     display: block;
-    background-color: var(--pagebackgroundcolor);
+    background-color: var(--fontlight);
     height: 2px;
     width: 2em;
     border-radius: 2px;
@@ -205,7 +208,7 @@ nav a:hover{
 }
 
 
-@media screen and (min-width: 40px){
+@media screen and (min-width: 800px){
     .nav-hide-label{
         display: none;
     }
@@ -250,10 +253,12 @@ nav a:hover{
         top: -0.5em;
         left: 0;
         right: 0;
-        transform: scale( 1, 1) ;   
+        transform: scale( 0, 1);
+        transition:transform 100ms ease-in;   
     }
     
     nav a:hover::before{
-        background-color: var(--fontlight);
+        transform: scale( 1, 1);
+        
     }
 }
