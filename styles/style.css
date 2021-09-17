@@ -205,7 +205,7 @@ nav a:hover{
 }
 
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 40px){
     .nav-hide-label{
         display: none;
     }
@@ -250,6 +250,10 @@ nav a:hover{
         top: -0.5em;
         left: 0;
         right: 0;
-        transform: ;   
+        transform: scale( 1, 1) ;   
+    }
+    
+    nav a:hover::before{
+        background-color: var(--fontlight);
     }
 }
