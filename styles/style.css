@@ -337,8 +337,8 @@ nav a:hover{
     grid-column: 1/span 2;
 }
 
-.equal {
-    background-color: #3F0D12;
+#equal {
+    background-color: #;
     grid-column: 3/span 2;
 }
 
