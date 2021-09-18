@@ -333,15 +333,30 @@ nav a:hover{
     border-radius: 10px;
 }
 
-.CA {
-    grid-column: 1/span 2;
+#CA {
+    grid-column: span 3;
+    background-color: #C62E65;
 }
 
 #equal {
-    background-color: #;
-    grid-column: 3/span 2;
+    background-color: #618B4A;
+    grid-column: ;
 }
 
+#operators {
+    background-color: #A36D90;
+}
+
+#del{
+    background-color: #C62E65;
+}
+
+/* https://coolors.co/be7c4d-f0e6d7-2f4d52-c62e65-a36d90-a5668b-66a182 */
+
+.calculator-buttons button:hover{
+    border-color: #1A090D;
+    cursor: pointer;
+}
 
 
 
