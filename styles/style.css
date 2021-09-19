@@ -267,7 +267,7 @@ nav a:hover{
 /* calculator */
 
 .output{
-    background-color: #042A2B;
+    background-color: #BE7C4D;
     margin: auto;
     display: grid;
     grid-template-rows: auto minmax(3em, auto);
@@ -299,7 +299,7 @@ nav a:hover{
     padding-left: 20px;
 }
 .calculator-buttons-backdrop{ 
-    background-color: #064749;
+    background-color: #FFC49B;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px ;
@@ -329,7 +329,7 @@ nav a:hover{
     background-color: #BE7C4D;
     font-family: 'Work Sans', sans-serif;
     color: #f0e6d7;
-    border: 2px solid #2F4D52;
+    border: 2px solid #FFC49B;
     border-radius: 10px;
 }
 
@@ -340,7 +340,6 @@ nav a:hover{
 
 #equal {
     background-color: #618B4A;
-    grid-column: ;
 }
 
 #operators {
