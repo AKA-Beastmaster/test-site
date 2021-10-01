@@ -1,41 +1,19 @@
-class calculator{
-    constructor(PreviousOperationtextelement, CurrentOperationtextelement) {
-        this.PreviousOperationtextelement = PreviousOperationtextelement
-        this.CurrentOperationtextelement = CurrentOperationtextelement
-        this.clear
-    }
-
-    clear(){
-        this.PreviousOperationtextelement = ''
-        this.CurrentOperationtextelement = ''
-        this.operation = undefined
-    }
-
-    delete(){
-
-    }
-
-    appendnumber(number){
-
-    }
-
-    chooseoperation(operation){
-
-    }
-
-    compute(){
-
-    }
-
-    updatedisplay(){
-
-    }
+const currentoperationtextelemnt = document.querySelector('[data-current-operation]')
+function cheesemaker(){
+    let text = 'cheese';
+    return text;
 }
 
-const numberbuttons = document.querySelectorAll('[data-number]')
-const operatorbuttons = document.querySelectorAll('[data-operator]')
-const clearbutton = document.querySelector('[data-clear]')
-const equalbutton = document.querySelector('[data-equal]')
-const delbutton = document.querySelector('[data-del]')
-const PreviousOperationtextelement = document.querySelector('[data-previous-operation]')
-const CurrentOperationtextelement = document.querySelector('[data-current-operation]')
+document.querySelectorAll('[data-number]').addEventListener('click', cheesemaker )
+
+
+currentoperationtextelemnt.textContent = text
+
+
+
+
+    // currentoperationtextelemnt.textContent = text
+
+// document.querySelector('html').onclick = function() {
+//     alert('Ouch! Stop poking me!');
+// }

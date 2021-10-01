@@ -99,12 +99,12 @@ html{
     margin-top: 50em;
 }
 
-#logo{
+/* #logo{
     /* padding-left: 7pt;
     padding-top: 5pt;
     padding-bottom: 5pt;
-    padding-right: 7pt; */ 
-}
+    padding-right: 7pt; 
+}*/  
 
 .topbar{
     background-color: var(--topbarcolor);
@@ -357,5 +357,8 @@ nav a:hover{
     cursor: pointer;
 }
 
-
+.calculator{
+    max-width: 700px;
+    margin: auto;
+}
 
