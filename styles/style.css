@@ -311,7 +311,6 @@ nav a:hover{
     height: 200px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    display: none;
 }
 .calculator-buttons{
     z-index: -1;
