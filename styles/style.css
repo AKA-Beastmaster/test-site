@@ -362,3 +362,8 @@ nav a:hover{
     margin: auto;
 }
 
+#noimp{
+    margin-bottom: 1em;
+    margin-top: -.5em;
+    font-size: 95%;
+}
