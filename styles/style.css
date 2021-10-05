@@ -299,7 +299,7 @@ nav a:hover{
     padding-left: 20px;
 }
 .calculator-buttons-backdrop{ 
-    background-color: #FFC49B;
+    background-color: #704221;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px ;
@@ -329,7 +329,7 @@ nav a:hover{
     background-color: #BE7C4D;
     font-family: 'Work Sans', sans-serif;
     color: #f0e6d7;
-    border: 2px solid #FFC49B;
+    border: 2px solid #704221;
     border-radius: 10px;
 }
 
